@@ -11,6 +11,8 @@ func initializeRoutes(router *gin.Engine) {
 	v1 := router.Group("/api/v1")
 	{
 		v1.GET("/openings", handler.ListOpeningsHandler)
+		v1.GET("/openings/:id", handler.GetOpeningHandler)
+		v1.POST("/opening", handler.CreateOpeningHandler)
 	}
 
 }

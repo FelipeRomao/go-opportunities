@@ -15,5 +15,5 @@ func ListOpeningsHandler(ctx *gin.Context) {
 		return
 	}
 
-	sendSuccess(ctx, "listOpenings", openings)
+	sendSuccess(ctx, "list-openings", openings)
 }
