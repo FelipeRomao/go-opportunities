@@ -14,6 +14,7 @@ func initializeRoutes(router *gin.Engine) {
 		v1.GET("/openings/:id", handler.GetOpeningHandler)
 		v1.POST("/opening", handler.CreateOpeningHandler)
 		v1.PUT("/opening/:id", handler.UpdateOpeningHandler)
+		v1.DELETE("/opening/:id", handler.DeleteOpeningHandler)
 	}
 
 }

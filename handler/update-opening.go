@@ -21,7 +21,7 @@ func UpdateOpeningHandler(ctx *gin.Context) {
 	id := ctx.Param("id")
 
 	if id == "" {
-		sendError(ctx, http.StatusBadRequest, errParamIsRequired("id", "queryParameter").Error())
+		sendError(ctx, http.StatusBadRequest, errParamIsRequired("id", "parameter").Error())
 		return
 	}
 
