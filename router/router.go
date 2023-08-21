@@ -15,7 +15,7 @@ func Initialize() {
 	// Get the port from the environment variables
 	port := os.Getenv("PORT")
 	if port == "" {
-		port = "5000"
+		port = "8080"
 	}
 
 	// Run the server
